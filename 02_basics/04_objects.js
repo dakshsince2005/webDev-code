@@ -27,3 +27,16 @@ console.log(Object.keys(tinderUser)); //print keys
 console.log(Object.values(tinderUser)); //print values
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn')); //.hasOwnProperty tells weather that property or key exist or not
+
+// de-structure of object
+const course = {
+    courseName: "Js in hindi",
+    prince: "999",
+    courseInstructor: "hitesh"
+}
+// course.courseInstructor
+// same way of writing the above line:-
+const {courseInstructor} = course; //{} this is used to do de structuring in javaScript
+console.log(courseInstructor);
+
+// API -> its is the data which we fetch from the back-end think of it as chef making food in the kitchen(backend) according to the request made by the customer(user) through the menu(frontend)
