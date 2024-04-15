@@ -12,3 +12,15 @@ console.log(c);
 */
 
 // Any and everything outside curly bracets have GLOBLE SCOPE and inside have BLOCK SCOPE
+
+// Scope in nested function -> The child function or inner function can access the variable of parent function but parent function can't access child function's variable
+function one() {
+    const username = "Daksh";
+    function two() {
+        const website = "Youtube";
+        console.log(username);
+    }
+    // console.log(website);
+    two();
+}
+one();
